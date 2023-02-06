@@ -1,5 +1,4 @@
 import styled from "styled-components";
-
 import brazil from '../image/brazil.png';
 
 const Wrapper = styled.div`
@@ -8,11 +7,15 @@ const Wrapper = styled.div`
 
     @media (min-width: 1024px)  {
         display: grid;
-        grid-template-columns: repeat(2, 50%);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "tx im"
+            "if im"
   }
 `;
 
 const Text = styled.p`
+    grid-area: tx;
     margin-top: 36px;
     @media (min-width: 1024px)  {
         margin-right: 32px;
@@ -20,6 +23,7 @@ const Text = styled.p`
 `;
 
 const Image = styled.div`
+  grid-area: im;
   height: 360px;
   width: 311px;
   border-radius: 8px;
@@ -36,6 +40,10 @@ const Image = styled.div`
   }
 `;
 
+const Info = styled.div`
+    grid-area: if;
+`;
+
 const ContentBox = () => {
     return (
         <Wrapper>
@@ -48,10 +56,12 @@ const ContentBox = () => {
                   except in 1942 and 1946 when it was not held because of the 
                   Second World War.
             </Text>
+            <Info>
+                <h3>Brazil</h3>
+                <p>1958, 1962, 1970, 1994, 2002</p>
+            </Info>
             <Image />
-            
-        </Wrapper>
-          
+        </Wrapper>  
     )
 }
 

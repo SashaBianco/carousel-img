@@ -1,10 +1,13 @@
 import styled from "styled-components";
 
-
 const Wrapper = styled.div`
     display: flex;
     justify-content: flex-end;
     margin-top: 36px;
+    margin-bottom: 36px;
+    @media (max-width: 768px) {
+        justify-content: center;
+    }
 `;
 const Prev = styled.button`
     background: none;
@@ -37,7 +40,6 @@ const Next = styled.button`
 `; 
 
 const Navigation = () => {
-
     return (
         <Wrapper>
             <Prev></Prev>
