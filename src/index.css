@@ -1,0 +1,16 @@
+
+body {
+  vertical-align: middle;
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  font-family: 'Itim';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #F5F8FF;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+}
