@@ -39,11 +39,24 @@ const Next = styled.button`
     }
 `; 
 
-const Navigation = () => {
+const Navigation = (props) => {
+
+    const showNextSlide = () => {
+        props.value === props.lastIndex 
+                        ? props.setValue(0)
+                        : props.setValue(props.value + 1);
+    }
+
+    const showPrevSlide = () => {
+        props.value === 0 
+                        ? props.setValue(props.lastIndex) 
+                        : props.setValue(props.value - 1);
+    }
+
     return (
         <Wrapper>
-            <Prev></Prev>
-            <Next></Next>
+            <Prev onClick={showPrevSlide}/>
+            <Next onClick={showNextSlide}/>
         </Wrapper>
     )
 }
