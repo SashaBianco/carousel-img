@@ -42,15 +42,25 @@ const Next = styled.button`
 const Navigation = (props) => {
 
     const showNextSlide = () => {
-        props.value === props.lastIndex 
-                        ? props.setValue(0)
-                        : props.setValue(props.value + 1);
+        props.index === props.lastIndex 
+                        ? props.setIndex(0)
+                        : props.setIndex(props.index + 1);
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: 'smooth',
+        });
     }
 
     const showPrevSlide = () => {
-        props.value === 0 
-                        ? props.setValue(props.lastIndex) 
-                        : props.setValue(props.value - 1);
+        props.index === 0 
+                        ? props.setIndex(props.lastIndex) 
+                        : props.setIndex(props.index - 1);
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: 'smooth',
+        });
     }
 
     return (

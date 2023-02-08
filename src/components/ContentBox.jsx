@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import uruguay from '../image/uruguay.png';
 
 const Wrapper = styled.div`
     display: flex;
@@ -27,7 +26,7 @@ const Image = styled.div`
   width: 311px;
   border-radius: 8px;
   border: 1px solid #D9D9D9;
-  background-image: url(${uruguay});
+  background-image: url(${props => props.img});
   background-size: cover;
   background-size: 200px auto;
   background-repeat: no-repeat;
@@ -47,7 +46,9 @@ const ContentBox = (props) => {
     return (
         <Wrapper>
             <Text>{props.currentSlide.text}</Text>
-            <Image /> 
+            <Image 
+              img = {props.img}
+            /> 
         </Wrapper>  
     )
 }

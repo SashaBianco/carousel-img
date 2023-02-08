@@ -28,23 +28,22 @@ const Title = styled.h2`
 `;
 
 const Box = () => {
-    const [value, setValue] = useState(0);
+    const [index, setIndex] = useState(0);
     const arr = [...data];
-    console.log(arr);
     const lastIndex = arr.length - 1;
-    const currentSlide = arr[value];
+    const currentSlide = arr[index];
 
     return (
         <Wrapper>
-            <Title> {currentSlide.year} year. {currentSlide.country}</Title>
+            <Title> The {currentSlide.year} FIFA World Cup. {currentSlide.country}</Title>
             <ContentBox 
               currentSlide = {currentSlide}
-              img = {currentSlide.url}
+              img = {currentSlide.img}
             />
             <Navigation
               lastIndex = {lastIndex}
-              value = {value}
-              setValue = {setValue}
+              index = {index}
+              setIndex = {setIndex}
             />
         </Wrapper>
     )
