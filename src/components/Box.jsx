@@ -29,9 +29,9 @@ const Title = styled.h2`
 
 const Box = () => {
     const [index, setIndex] = useState(0);
-    const arr = [...data];
-    const lastIndex = arr.length - 1;
-    const currentSlide = arr[index];
+
+    const lastIndex = [...data].length - 1;
+    const currentSlide = [...data][index];
 
     return (
         <Wrapper>
