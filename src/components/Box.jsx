@@ -1,8 +1,8 @@
-import styled from "styled-components";
-import ContentBox from "./ContentBox";
-import Navigation from "./Nagitation";
-import data from '../data';
-import { useState } from "react";
+import styled from 'styled-components'
+import ContentBox from './ContentBox'
+import Navigation from './Nagitation'
+import data from '../data'
+import React, { useState } from 'react'
 
 const Wrapper = styled.div`
   height: 100%;
@@ -21,22 +21,22 @@ const Wrapper = styled.div`
     width: 50%;
     height: auto;
  }
-`;
+`
 
 const Title = styled.h2`
   margin-bottom: 30px;
-`;
+`
 
 const Box = () => {
-    const [index, setIndex] = useState(0);
+  const [index, setIndex] = useState(0)
 
-    const lastIndex = data.length - 1;
-    const currentSlide = data[index];
+  const lastIndex = data.length - 1
+  const currentSlide = data[index]
 
-    return (
+  return (
         <Wrapper>
             <Title> The {currentSlide.year} FIFA World Cup. {currentSlide.country}</Title>
-            <ContentBox 
+            <ContentBox
               currentSlide = {currentSlide}
               img = {currentSlide.img}
             />
@@ -46,7 +46,7 @@ const Box = () => {
               setIndex = {setIndex}
             />
         </Wrapper>
-    )
+  )
 }
 
-export default Box;
+export default Box

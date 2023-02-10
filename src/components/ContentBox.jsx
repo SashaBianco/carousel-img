@@ -1,4 +1,5 @@
-import styled from "styled-components";
+import React from 'react'
+import styled from 'styled-components'
 
 const Wrapper = styled.div`
     display: flex;
@@ -10,7 +11,7 @@ const Wrapper = styled.div`
         grid-template-areas:
             "tx tx tx im im"
   }
-`;
+`
 
 const Text = styled.p`
     grid-area: tx;
@@ -18,7 +19,7 @@ const Text = styled.p`
     @media (min-width: 1024px)  {
         margin-right: 16px;
   }
-`;
+`
 
 const Image = styled.div`
   grid-area: im;
@@ -37,20 +38,17 @@ const Image = styled.div`
   @media (min-width: 1024px) {
     margin-left: calc(100% - 311px);
   }
-`;
-
-
+`
 
 const ContentBox = (props) => {
-
-    return (
+  return (
         <Wrapper>
             <Text>{props.currentSlide.text}</Text>
-            <Image 
+            <Image
               img = {props.img}
-            /> 
-        </Wrapper>  
-    )
+            />
+        </Wrapper>
+  )
 }
 
-export default ContentBox;
+export default ContentBox

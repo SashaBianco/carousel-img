@@ -1,4 +1,6 @@
-import styled from "styled-components";
+
+import styled from 'styled-components'
+import React from 'react'
 
 const Wrapper = styled.div`
     display: flex;
@@ -8,7 +10,7 @@ const Wrapper = styled.div`
     @media (max-width: 768px) {
         justify-content: center;
     }
-`;
+`
 const Prev = styled.button`
     background: none;
     outline: none;
@@ -22,7 +24,7 @@ const Prev = styled.button`
         cursor: pointer;
         transform: scale(1.5);
     }
-`;
+`
 
 const Next = styled.button`
     background: none;
@@ -37,38 +39,37 @@ const Next = styled.button`
         cursor: pointer;
         transform: scale(1.5);
     }
-`; 
+`
 
 const Navigation = (props) => {
+  const showNextSlide = () => {
+    props.index === props.lastIndex
+      ? props.setIndex(0)
+      : props.setIndex(props.index + 1)
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    })
+  }
 
-    const showNextSlide = () => {
-        props.index === props.lastIndex 
-                        ? props.setIndex(0)
-                        : props.setIndex(props.index + 1);
-        window.scrollTo({
-            top: 0,
-            left: 0,
-            behavior: 'smooth',
-        });
-    }
+  const showPrevSlide = () => {
+    props.index === 0
+      ? props.setIndex(props.lastIndex)
+      : props.setIndex(props.index - 1)
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    })
+  }
 
-    const showPrevSlide = () => {
-        props.index === 0 
-                        ? props.setIndex(props.lastIndex) 
-                        : props.setIndex(props.index - 1);
-        window.scrollTo({
-            top: 0,
-            left: 0,
-            behavior: 'smooth',
-        });
-    }
-
-    return (
+  return (
         <Wrapper>
             <Prev onClick={showPrevSlide}/>
             <Next onClick={showNextSlide}/>
         </Wrapper>
-    )
+  )
 }
 
-export default Navigation;
+export default Navigation
