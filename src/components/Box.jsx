@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import ContentBox from "./ContentBox";
 import Navigation from "./Nagitation";
+import data from '../data';
+import { useState } from "react";
 
 const Wrapper = styled.div`
   height: 100%;
@@ -26,11 +28,23 @@ const Title = styled.h2`
 `;
 
 const Box = () => {
+    const [index, setIndex] = useState(0);
+
+    const lastIndex = data.length - 1;
+    const currentSlide = data[index];
+
     return (
         <Wrapper>
-            <Title>World Cup Football Winners</Title>
-            <ContentBox />
-            <Navigation/>
+            <Title> The {currentSlide.year} FIFA World Cup. {currentSlide.country}</Title>
+            <ContentBox 
+              currentSlide = {currentSlide}
+              img = {currentSlide.img}
+            />
+            <Navigation
+              lastIndex = {lastIndex}
+              index = {index}
+              setIndex = {setIndex}
+            />
         </Wrapper>
     )
 }
