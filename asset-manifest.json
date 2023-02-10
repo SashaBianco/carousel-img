@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/slider/static/css/main.7c7b87b1.css",
+    "main.js": "/slider/static/js/main.4ea5f058.js",
+    "static/media/argentina.png": "/slider/static/media/argentina.b23981308994d2839a5b.png",
+    "static/media/uruguay.png": "/slider/static/media/uruguay.10db9dc3eafc7b53751c.png",
+    "static/media/brazil.png": "/slider/static/media/brazil.a9a488b8c99690f8c728.png",
+    "static/media/italy.png": "/slider/static/media/italy.bd9213c376cd1569bd7f.png",
+    "static/media/france.png": "/slider/static/media/france.3e1da5751d7b9dadb58f.png",
+    "static/media/spain.png": "/slider/static/media/spain.27e5bb4d22dcda136ab7.png",
+    "static/media/england.png": "/slider/static/media/england.668cbfa0c4fcdd7e51dd.png",
+    "static/media/germany.png": "/slider/static/media/germany.c83cffc5813da647c546.png",
+    "index.html": "/slider/index.html",
+    "main.7c7b87b1.css.map": "/slider/static/css/main.7c7b87b1.css.map",
+    "main.4ea5f058.js.map": "/slider/static/js/main.4ea5f058.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7c7b87b1.css",
+    "static/js/main.4ea5f058.js"
+  ]
+}
