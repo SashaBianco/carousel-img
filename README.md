@@ -1,1 +1,0 @@
-demo: https://sashabianco.github.io/slider/
