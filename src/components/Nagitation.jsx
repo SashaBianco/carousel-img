@@ -39,11 +39,34 @@ const Next = styled.button`
     }
 `; 
 
-const Navigation = () => {
+const Navigation = (props) => {
+
+    const showNextSlide = () => {
+        props.index === props.lastIndex 
+                        ? props.setIndex(0)
+                        : props.setIndex(props.index + 1);
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: 'smooth',
+        });
+    }
+
+    const showPrevSlide = () => {
+        props.index === 0 
+                        ? props.setIndex(props.lastIndex) 
+                        : props.setIndex(props.index - 1);
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: 'smooth',
+        });
+    }
+
     return (
         <Wrapper>
-            <Prev></Prev>
-            <Next></Next>
+            <Prev onClick={showPrevSlide}/>
+            <Next onClick={showNextSlide}/>
         </Wrapper>
     )
 }
