@@ -3,13 +3,10 @@ import styled from 'styled-components'
 import React from 'react'
 
 const Wrapper = styled.div`
+    position: absolute;
     display: flex;
-    justify-content: flex-end;
-    margin-top: 36px;
-    margin-bottom: 36px;
-    @media (max-width: 768px) {
-        justify-content: center;
-    }
+    justify-content: center;
+    bottom: 50px;
 `
 const Prev = styled.button`
     background: none;
@@ -44,8 +41,8 @@ const Next = styled.button`
 const Navigation = (props) => {
   const showNextSlide = () => {
     props.index === props.lastIndex
-      ? props.setIndex(0)
-      : props.setIndex(props.index + 1)
+      ? props.onChangeIndex(0)
+      : props.onChangeIndex(props.index + 1)
     window.scrollTo({
       top: 0,
       left: 0,
@@ -55,8 +52,8 @@ const Navigation = (props) => {
 
   const showPrevSlide = () => {
     props.index === 0
-      ? props.setIndex(props.lastIndex)
-      : props.setIndex(props.index - 1)
+      ? props.onChangeIndex(props.lastIndex)
+      : props.onChangeIndex(props.index - 1)
     window.scrollTo({
       top: 0,
       left: 0,
