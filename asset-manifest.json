@@ -1,21 +1,29 @@
 {
   "files": {
     "main.css": "/slider/static/css/main.7c7b87b1.css",
-    "main.js": "/slider/static/js/main.4ea5f058.js",
-    "static/media/argentina.png": "/slider/static/media/argentina.b23981308994d2839a5b.png",
-    "static/media/uruguay.png": "/slider/static/media/uruguay.10db9dc3eafc7b53751c.png",
-    "static/media/brazil.png": "/slider/static/media/brazil.a9a488b8c99690f8c728.png",
-    "static/media/italy.png": "/slider/static/media/italy.bd9213c376cd1569bd7f.png",
-    "static/media/france.png": "/slider/static/media/france.3e1da5751d7b9dadb58f.png",
-    "static/media/spain.png": "/slider/static/media/spain.27e5bb4d22dcda136ab7.png",
-    "static/media/england.png": "/slider/static/media/england.668cbfa0c4fcdd7e51dd.png",
-    "static/media/germany.png": "/slider/static/media/germany.c83cffc5813da647c546.png",
+    "main.js": "/slider/static/js/main.8b20dca4.js",
+    "static/media/img11.svg": "/slider/static/media/img11.eec79f5f74752b00711564181f8878c7.svg",
+    "static/media/img2.svg": "/slider/static/media/img2.03d57a195b1ab32b47a2753f9c814565.svg",
+    "static/media/img12.svg": "/slider/static/media/img12.e42b1641760cf77cd0c7db3285b51ec0.svg",
+    "static/media/img14.svg": "/slider/static/media/img14.2b4b6d981dee8eba13b7b6a5e73f8a63.svg",
+    "static/media/img10.svg": "/slider/static/media/img10.3b9806c12b58d05602ae05d7b825c056.svg",
+    "static/media/img3.svg": "/slider/static/media/img3.aa4a6af60999272f33994a89fdf81112.svg",
+    "static/media/img9.svg": "/slider/static/media/img9.90cf2ccabc0d307076aa6eef6ce31884.svg",
+    "static/media/img13.svg": "/slider/static/media/img13.399077e64bc7353f0580ca849ad7d1c6.svg",
+    "static/media/img8.svg": "/slider/static/media/img8.bfd4898cca2444213c105cd8ab92e106.svg",
+    "static/media/img5.svg": "/slider/static/media/img5.27f781b493628fb90a102e9a9bd44d52.svg",
+    "static/media/img16.svg": "/slider/static/media/img16.43c2871c558e995b93a3bcb320068fd5.svg",
+    "static/media/img7.svg": "/slider/static/media/img7.f8cbea94c6d8095989156ae21b9c2a15.svg",
+    "static/media/img4.svg": "/slider/static/media/img4.4b86d63933e2fc1eb4c32ce0f804e727.svg",
+    "static/media/img15.svg": "/slider/static/media/img15.da2df053381eb09a90d60feecfc20757.svg",
+    "static/media/img1.svg": "/slider/static/media/img1.ecb66c8436ff4688dfe7c06949c591f8.svg",
+    "static/media/img6.svg": "/slider/static/media/img6.06e7296a33eaf024bb07f42f32252194.svg",
     "index.html": "/slider/index.html",
     "main.7c7b87b1.css.map": "/slider/static/css/main.7c7b87b1.css.map",
-    "main.4ea5f058.js.map": "/slider/static/js/main.4ea5f058.js.map"
+    "main.8b20dca4.js.map": "/slider/static/js/main.8b20dca4.js.map"
   },
   "entrypoints": [
     "static/css/main.7c7b87b1.css",
-    "static/js/main.4ea5f058.js"
+    "static/js/main.8b20dca4.js"
   ]
 }
