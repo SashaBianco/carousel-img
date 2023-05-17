@@ -1,1 +1,1 @@
-demo: https://sashabianco.github.io/slider/
+demo: https://sashabianco.github.io/carousel-img/
