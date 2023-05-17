@@ -21,7 +21,7 @@ const Image = styled.div`
   background: #fff;
   background-image: url(${props => props.img});
   background-size: cover;
-  background-size: 100px auto;
+  background-size: 400px auto;
   background-repeat: no-repeat;
   background-position: center;
   @media (min-width: 1024px) {
